@@ -95,4 +95,4 @@
 
 -----
 
-.. _代码: http://www.baidu.com
+.. _代码: https://github.com/fuwenchao/myspringclouddemo

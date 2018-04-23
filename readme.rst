@@ -253,5 +253,5 @@ application.yml 配置如下
 
 .. _服务注册中心高可用环境搭建: https://fuwenchao.github.io/mydoc/doc_build/microservice/springcloud/springcloud_eureka%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html
 
-.. _源代码: http://www.baidu.com
+.. _源代码: https://github.com/fuwenchao/myspringclouddemo
 
