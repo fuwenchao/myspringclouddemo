@@ -1,11 +1,12 @@
 服务消费者的负载均衡器
--------------------------
+=========================
 
 1. 新建工程
+-----------------------------
 
     ribbon-service
 
-#. application.yml如下
+ application.yml如下
 
 .. code:: java
 
@@ -19,7 +20,8 @@
         serviceUrl:
           defaultZone: http://localhost:8889/eureka/
 
-#. pom.xml 如下
+2. pom.xml 如下
+-------------------------
 
 .. code:: java
 
@@ -53,11 +55,13 @@
         </dependency>-->
     </dependencies>
 
-#. 向服务中心注册
+3. 向服务中心注册
+-------------------------
 
     在入口类中增加 @EnableDiscoveryClient
 
-#. 开启负载均衡
+4. 开启负载均衡
+-----------------------
 
 在主函数中增加
 
@@ -74,7 +78,8 @@
 并通过@LoadBalanced注解表明这个 restRemplate
 开启负载均衡的功能。
 
-#. 调用服务
+5. 调用服务
+-----------------
 
 .. code:: java
 
@@ -87,12 +92,23 @@
 会采取某种策略的负载均衡，ribbon默认轮询
 
 
-具体参考 代码_
 
+6. 此时架构图如下
+-----------------------
 
+网下找的，端口不一样
 
-
+.. image:: ./images/arch-ribbon.png
 
 -----
+
+7. 具体参考 代码_
+-----------------------
+
+
+
+
+
+
 
 .. _代码: https://github.com/fuwenchao/myspringclouddemo
